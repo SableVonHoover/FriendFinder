@@ -150,6 +150,16 @@
 
             <button id="submit-btn">Submit</button>
         </form>
+        <hr />
+        <br />
+        <div id="resultArea">
+            <div class="col-md-3 col-md-offset-3">
+                <img id="resultPic" src="" />
+            </div>
+            <div class="col-md-3 col-md-offset-3">
+                <h1 id="resultName"></h1>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -159,7 +169,7 @@
         $("#submit-btn").on("click", function () {
             event.preventDefault();
 
-            //Text input values
+            //Text input values TODO: Add validations
             var userName = $("#nameInput").val().trim();
             var userPic = $("#photoInput").val().trim();
 
@@ -200,10 +210,10 @@
                 scores: answerArray
             }
 
+            //Shows the result of the user's closest match in the div below the survey area
             $.post("api/friends", User, function (response) {
-                var result = ;
-
-
+                $("#resultName").text(response.name);
+                $("#resultPic").attr("src", response.pic);
             })
 
             console.log(answerArray);
