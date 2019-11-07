@@ -194,9 +194,23 @@
             answer10 = $("#question10").val();
             answerArray.push(answer10);
 
+            var User = {
+                name: userName,
+                pic: userPic,
+                scores: answerArray
+            }
 
+            $.post("api/friends", User, function (response) {
+                var result = ;
+
+
+            })
 
             console.log(answerArray);
+            console.log(User);
+
+            //empty array
+            answerArray = [];
 
         });
     </script>
