@@ -30,7 +30,7 @@
             <!--Question Fields-->
             <div class="form-group">
                 <h2>Question 1</h2>
-                <label></label>
+                <label>You enjoy long walks</label>
                 <select id="question1" class="form-control">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -42,7 +42,7 @@
 
             <div class="form-group">
                 <h2>Question 2</h2>
-                <label></label>
+                <label>The sight of blood makes you faint</label>
                 <select id="question2" class="form-control">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -54,7 +54,7 @@
 
             <div class="form-group">
                 <h2>Question 3</h2>
-                <label></label>
+                <label>You find yourself thniking about how weird hands are often</label>
                 <select id="question3" class="form-control">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -66,7 +66,7 @@
 
             <div class="form-group">
                 <h2>Question 4</h2>
-                <label></label>
+                <label>What is 2 + 1?</label>
                 <select id="question4" class="form-control">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -78,7 +78,7 @@
 
             <div class="form-group">
                 <h2>Question 5</h2>
-                <label></label>
+                <label>You stick to your ideals</label>
                 <select id="question5" class="form-control">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -90,7 +90,7 @@
 
             <div class="form-group">
                 <h2>Question 6</h2>
-                <label></label>
+                <label>You like to be awake during the night</label>
                 <select id="question6" class="form-control">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -102,7 +102,7 @@
 
             <div class="form-group">
                 <h2>Question 7</h2>
-                <label></label>
+                <label>You like pineapple on pizza.</label>
                 <select id="question7" class="form-control">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -114,7 +114,7 @@
 
             <div class="form-group">
                 <h2>Question 8</h2>
-                <label></label>
+                <label>You think it's good idea to make friends through the internet</label>
                 <select id="question8" class="form-control">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -126,7 +126,7 @@
 
             <div class="form-group">
                 <h2>Question 9</h2>
-                <label></label>
+                <label>Food tastes better with company</label>
                 <select id="question9" class="form-control">
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
@@ -148,6 +148,7 @@
                 </select>
             </div>
 
+            <!--Once you click this there's no going back-->
             <button id="submit-btn">Submit</button>
         </form>
         <hr />
@@ -204,6 +205,7 @@
             answer10 = $("#question10").val();
             answerArray.push(answer10);
 
+            //saving inputs into an object
             var User = {
                 name: userName,
                 pic: userPic,
